@@ -1,0 +1,33 @@
+Battleship, C version.
+Dillon Bendig, April 2020
+
+For the most part, the game will be very familiar to the popular battleship, with a few small changes.
+The game also includes all instructions required to play, however I will give a summarized description below,
+as well as how to run the game for how it has been built, and tested.
+
+For testing and programming this game, I used the GNU GCC compiler, within a Linux environment.
+Use the following command to run the program in a Linux Terminal, while in the file folder with main.c;
+compile: gcc -o main main.c
+run: ./main
+
+The game will start with a short introduction, and then the player will be required to place their ships
+onto their grid. The enemy ships will be placed automatically by default. The game will then go back and forth
+between the player and the enemy, each ordering to shoot at specified co-ordinates. The game will end when one
+side has destroyed every part of each opposing ship. After the game has ended the user can select to play again,
+or to exit the program.
+
+Input formats:
+
+Placing ships
+First enter the head co-ordinate, and then a space, and then the tail co-ordinate of the specified ship.
+Be careful to consider the length of the ship, with your head and tail co-ordinates.
+Ex. If the ship length is 5,
+    a1 a5       OR    a1 e1
+
+Firing co-ordinates
+This is very similar to placing the ships, accept you only provide one co-ordinate.
+Ex.
+    a1
+
+Answering Yes or No questions
+As specified in the question, enter "Y" for yes, and "N" for no.
